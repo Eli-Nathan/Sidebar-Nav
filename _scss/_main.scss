@@ -1,12 +1,7 @@
-/*!
- * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
- */
-
 body {
   overflow-x: hidden;
   background: #fafafa;
+  margin-top:56px;
 }
 
 #wrapper {
@@ -95,13 +90,13 @@ body {
 
 @media (min-width: 768px) {
   #wrapper {
-    padding-left: 0;
+    padding-left: 250px;
     &.toggled {
       padding-left: 250px;
     }
   }
   #sidebar-wrapper {
-    width: 0;
+    width: 250px;
   }
   #wrapper.toggled #sidebar-wrapper {
     width: 250px;

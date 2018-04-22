@@ -2,6 +2,7 @@ body {
   overflow-x: hidden;
   background: #fafafa;
   margin-top:56px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #wrapper {
@@ -38,6 +39,7 @@ body {
 #page-content-wrapper {
   width: 100%;
   position: absolute;
+  padding-top: 12px;
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -46,7 +48,38 @@ body {
 }
 
 /* Sidebar Styles */
-
+.menu-icon {
+  cursor: pointer;
+  position: fixed;
+  z-index: 1000;
+  right: 10px;
+  color: #fff!important;
+  svg {
+    width:70px;
+    -webkit-filter: drop-shadow( 0 0 5px rgba(#000, .5) );
+    filter: drop-shadow( 0 0 5px rgba(#000, .5) );
+    .close {
+      display: none;
+    }
+  }
+}
+#wrapper.toggled {
+  svg {
+    -webkit-transition: -webkit-transform .8s;
+    transition: transform .8s;
+    transform: rotate(270deg);
+    .open {
+      display:none;
+    }
+    .close {
+      display: block;
+      fill: #fff;
+      path {
+        fill:#fff!important;
+      }
+    }
+  }
+}
 .sidebar-nav {
   position: absolute;
   top: 0;
@@ -90,13 +123,13 @@ body {
 
 @media (min-width: 768px) {
   #wrapper {
-    padding-left: 250px;
+    padding-left: 0;
     &.toggled {
       padding-left: 250px;
     }
   }
   #sidebar-wrapper {
-    width: 250px;
+    width: 0;
   }
   #wrapper.toggled #sidebar-wrapper {
     width: 250px;

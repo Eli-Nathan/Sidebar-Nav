@@ -64,6 +64,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap (~> 4.0.0)
+  jekyll
 
 BUNDLED WITH
    1.16.1

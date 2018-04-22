@@ -63,9 +63,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  amp-jekyll
   bootstrap (~> 4.0.0)
-  jekyll
 
 BUNDLED WITH
    1.16.1

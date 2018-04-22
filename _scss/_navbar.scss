@@ -1,0 +1,18 @@
+nav.navbar {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  .navbar-toggler {
+    background:#eee;
+    color:#333333;
+  }
+  .navbar-brand {
+    color: $text;
+  }
+  ul {
+    li {
+      a.nav-link {
+        color: $text;
+      }
+    }
+  }
+}
